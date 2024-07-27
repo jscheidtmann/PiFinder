@@ -35,6 +35,7 @@ class UIObjectDetails(UIModule):
     """
 
     __title__ = "OBJECT"
+    _display_mode_list = [DM_LOCATE, DM_DESC, DM_POSS]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -43,7 +44,7 @@ class UIObjectDetails(UIModule):
         self.mount_type = self.config_object.get_option("mount_type")
         self.object = self.item_definition["object"]
 
-        self.object_display_mode = DM_LOCATE
+        self.display_mode = DM_LOCATE
         self.object_image = None
 
         self.fov_list = [1, 0.5, 0.25, 0.125]
@@ -186,7 +187,7 @@ class UIObjectDetails(UIModule):
         self.descTextLayout.set_text(desc)
         self.texts["desc"] = self.descTextLayout
 
-        if self.object_display_mode == DM_SDSS:
+        if self.display_mode == DM_SDSS:
             source = "SDSS"
         else:
             source = "POSS"
@@ -202,7 +203,7 @@ class UIObjectDetails(UIModule):
             self.fov_list[self.fov_index],
             roll,
             self.display_class,
-            burn_in=self.object_display_mode in [DM_POSS, DM_SDSS],
+            burn_in=self.display_mode in [DM_POSS, DM_SDSS],
         )
 
     def active(self):
@@ -299,7 +300,7 @@ class UIObjectDetails(UIModule):
         # paste image
         self.screen.paste(self.object_image)
 
-        if self.object_display_mode == DM_DESC or self.object_display_mode == DM_LOCATE:
+        if self.display_mode == DM_DESC or self.display_mode == DM_LOCATE:
             # dim image
             self.draw.rectangle(
                 [
@@ -322,10 +323,10 @@ class UIObjectDetails(UIModule):
             if typeconst:
                 typeconst.draw((0, 36))
 
-        if self.object_display_mode == DM_LOCATE:
+        if self.display_mode == DM_LOCATE:
             self._render_pointing_instructions()
 
-        if self.object_display_mode == DM_DESC:
+        if self.display_mode == DM_DESC:
             # Object Magnitude and size i.e. 'Mag:4.0   Sz:7"'
             magsize = self.texts.get("magsize")
             posy = 52
@@ -362,21 +363,27 @@ class UIObjectDetails(UIModule):
 
         return self.screen_update()
 
-    def key_down(self):
-        # switch object display text
-        self.object_display_mode = (
-            self.object_display_mode + 1 if self.object_display_mode < 2 else 2
-        )
+    def cycle_display_mode(self):
+        """
+        Cycle through available display modes
+        for a module.  Invoked when the square
+        key is pressed
+        """
+        self.display_mode = next(self._display_mode_cycle)
         self.update_object_info()
         self.update()
 
+    def key_down(self):
+        """
+        Go to the next object on the object list
+        """
+        pass
+
     def key_up(self):
-        # switch object display text
-        self.object_display_mode = (
-            self.object_display_mode - 1 if self.object_display_mode > 0 else 0
-        )
-        self.update_object_info()
-        self.update()
+        """
+        Go to the previous object on the object list
+        """
+        pass
 
     def change_fov(self, direction):
         self.fov_index += direction
@@ -388,7 +395,7 @@ class UIObjectDetails(UIModule):
         self.update()
 
     def key_plus(self):
-        if self.object_display_mode == DM_DESC:
+        if self.display_mode == DM_DESC:
             self.descTextLayout.next()
             typeconst = self.texts.get("type-const")
             if typeconst and isinstance(typeconst, TextLayouter):
@@ -397,7 +404,7 @@ class UIObjectDetails(UIModule):
             self.change_fov(1)
 
     def key_minus(self):
-        if self.object_display_mode == DM_DESC:
+        if self.display_mode == DM_DESC:
             self.descTextLayout.next()
             typeconst = self.texts.get("type-const")
             if typeconst and isinstance(typeconst, TextLayouter):

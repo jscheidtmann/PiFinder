@@ -217,7 +217,11 @@ class UIPreview(UIModule):
             self.last_update = last_image_time
 
             if self.align_mode:
-                self.draw_star_selectors()
+                if self._unmoved:
+                    self.draw_star_selectors()
+                else:
+                    # TODO: Give message about needing solve
+                    pass
             else:
                 self.draw_reticle()
 
@@ -225,27 +229,18 @@ class UIPreview(UIModule):
             title_bar=not self.align_mode, button_hints=not self.align_mode
         )
 
-    def key_up(self):
-        """
-        leave bright star alignment mode
-        """
-        if not self.align_mode:
-            return
-
-        self.align_mode = False
-        self.shared_state.set_camera_align(self.align_mode)
-        self.update(force=True)
-
-    def key_down(self):
+    def cycle_display_mode(self):
         """
         Enter bright star alignment mode
         """
         if self.align_mode:
-            return
-
-        self.align_mode = True
-        self.shared_state.set_camera_align(self.align_mode)
-        self.update(force=True)
+            self.align_mode = False
+            self.shared_state.set_camera_align(self.align_mode)
+            self.update(force=True)
+        else:
+            self.align_mode = True
+            self.shared_state.set_camera_align(self.align_mode)
+            self.update(force=True)
 
     def key_number(self, number):
         if self.align_mode:
