@@ -15,12 +15,18 @@ from PIL import Image, ImageDraw
 from luma.core.interface.serial import spi
 from PiFinder import displays
 import numpy as np
+from rpi_hardware_pwm import HardwarePWM
 
+def init_keypad_pwm():
+    # TODO: Keypad pwm class that can be faked maybe?
+    keypad_pwm = HardwarePWM(pwm_channel=1, hz=120)
+    keypad_pwm.start(10)
 
 def do_nothing():
     pass
 
 def show_splash():
+    init_keypad_pwm()
     display = displays.get_display("ssd1351")
     display.set_brightness(125)
 
