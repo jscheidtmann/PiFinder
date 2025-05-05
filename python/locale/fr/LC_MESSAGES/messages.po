@@ -56,7 +56,7 @@ msgstr "Planète"
 #: PiFinder/obj_types.py:13
 #, fuzzy
 msgid "Cluster + Neb"
-msgstr "Amas Ouvert"
+msgstr "Amas Ouvert + neb."
 
 #. TRANSLATORS: Object type
 #: PiFinder/obj_types.py:14 PiFinder/ui/menu_structure.py:406
@@ -72,7 +72,7 @@ msgstr "Knot"
 #: PiFinder/obj_types.py:16
 #, fuzzy
 msgid "Triple star"
-msgstr "Etoile Double"
+msgstr "Etoile triple"
 
 #. TRANSLATORS: Object type
 #: PiFinder/obj_types.py:17
@@ -104,7 +104,7 @@ msgstr "Comètes"
 
 #: PiFinder/ui/align.py:56
 msgid "Align Timeout"
-msgstr "Temps d'alignement dépassé"
+msgstr "Temps d'align. dépassé"
 
 #: PiFinder/ui/align.py:74
 msgid "Alignment Set"
@@ -112,7 +112,7 @@ msgstr "Alignement en cours"
 
 #: PiFinder/ui/align.py:272 PiFinder/ui/chart.py:210
 msgid "Can't plot"
-msgstr "Pas d'astrométrie"
+msgstr "Ne peux pazs d'astrom."
 
 #: PiFinder/ui/align.py:284 PiFinder/ui/chart.py:222 PiFinder/ui/log.py:174
 #: PiFinder/ui/object_list.py:206 PiFinder/ui/object_list.py:226
@@ -135,7 +135,7 @@ msgstr "Erreur d'alignement"
 
 #: PiFinder/ui/callbacks.py:50
 msgid "Filters Reset"
-msgstr "RàZ filtres"
+msgstr "RàZ des filtres"
 
 #: PiFinder/ui/callbacks.py:63 PiFinder/ui/menu_structure.py:949
 #, fuzzy
@@ -208,13 +208,13 @@ msgstr "Basique"
 #. TRANSLATORS: coarse GPS fix, does this happen?
 #: PiFinder/ui/gpsstatus.py:35
 msgid "Accurate"
-msgstr "Fin"
+msgstr "Précis"
 
 #. TRANSLATORS: GPS 2D Fix
 #: PiFinder/ui/gpsstatus.py:36
 #, fuzzy
 msgid "Precise"
-msgstr "Récent"
+msgstr "trés pr&écis"
 
 #: PiFinder/ui/gpsstatus.py:46
 #, fuzzy
@@ -232,7 +232,7 @@ msgstr "Localisation"
 
 #: PiFinder/ui/gpsstatus.py:83
 msgid "Loc {number}"
-msgstr "Loc {number}"
+msgstr "Loc. {number}"
 
 #: PiFinder/ui/gpsstatus.py:113
 #, fuzzy
@@ -274,12 +274,12 @@ msgstr "Rester sur cet écran"
 
 #: PiFinder/ui/gpsstatus.py:195
 msgid "for quicker lock"
-msgstr ""
+msgstr "pour vérouillage rapide"
 
 #: PiFinder/ui/gpsstatus.py:206
 #, fuzzy
 msgid "Lock Type:"
-msgstr "Type de Monture"
+msgstr "Type de vérouillage"
 
 #: PiFinder/ui/gpsstatus.py:213 PiFinder/ui/menu_structure.py:426
 #: PiFinder/ui/menu_structure.py:458
@@ -404,7 +404,7 @@ msgstr "Oculaire"
 #: PiFinder/ui/menu_manager.py:96
 #, fuzzy
 msgid "Telescope"
-msgstr "Telescope..."
+msgstr "Telescope"
 
 #: PiFinder/ui/menu_structure.py:23
 #, fuzzy
@@ -920,21 +920,21 @@ msgstr "Pas d'objets"
 
 #: PiFinder/ui/object_details.py:175 PiFinder/ui/object_details.py:183
 msgid "Mag:{obj_mag}"
-msgstr ""
+msgstr "Mag:{obj_mag}"
 
 #. TRANSLATORS: object info magnitude
 #: PiFinder/ui/object_details.py:178
 msgid "Sz:{size}"
-msgstr ""
+msgstr "Taille:{size}"
 
 #: PiFinder/ui/object_details.py:207
 #, fuzzy
 msgid "  Not Logged"
-msgstr "Connecté"
+msgstr "Non connecté"
 
 #: PiFinder/ui/object_details.py:209
 msgid "  {logs} Logs"
-msgstr ""
+msgstr "  {logs} Logs"
 
 #: PiFinder/ui/object_details.py:244
 #, fuzzy
@@ -943,16 +943,16 @@ msgstr "Pas d'astrometrie"
 
 #: PiFinder/ui/object_details.py:250
 msgid "yet{elipsis}"
-msgstr ""
+msgstr "maintenant{elipsis}"
 
 #: PiFinder/ui/object_details.py:264
 #, fuzzy
 msgid "Searching"
-msgstr "Seeing"
+msgstr "Recherche"
 
 #: PiFinder/ui/object_details.py:270
 msgid "for GPS{elipsis}"
-msgstr ""
+msgstr "pour GPS{elipsis}"
 
 #: PiFinder/ui/object_details.py:284
 msgid "Calculating"
@@ -965,17 +965,17 @@ msgstr "Trop loin"
 #: PiFinder/ui/object_details.py:496
 #, fuzzy
 msgid "LOG"
-msgstr "Bas"
+msgstr "Log"
 
 #: PiFinder/ui/object_list.py:123
 #, fuzzy
 msgid "Sort"
-msgstr "Etoile"
+msgstr "Type"
 
 #: PiFinder/ui/object_list.py:127 PiFinder/ui/object_list.py:667
 #, fuzzy
 msgid "Nearest"
-msgstr "Récent"
+msgstr "Plus prés"
 
 #: PiFinder/ui/object_list.py:131 PiFinder/ui/object_list.py:673
 #, fuzzy
@@ -986,11 +986,11 @@ msgstr "Etoile"
 msgid ""
 "Sorting by\n"
 "{sort_order}"
-msgstr ""
+msgstr "Classement pas \n"
 
 #: PiFinder/ui/object_list.py:194 PiFinder/ui/object_list.py:678
 msgid "RA"
-msgstr ""
+msgstr "AD"
 
 #: PiFinder/ui/object_list.py:196 PiFinder/ui/object_list.py:445
 #, fuzzy
@@ -999,7 +999,7 @@ msgstr "Catalogues"
 
 #: PiFinder/ui/object_list.py:198 PiFinder/ui/object_list.py:447
 msgid "Nearby"
-msgstr ""
+msgstr "Plus proche"
 
 #: PiFinder/ui/object_list.py:409
 #, fuzzy
@@ -1013,40 +1013,40 @@ msgstr "Filtre de rech."
 
 #: PiFinder/ui/object_list.py:431
 msgid "{catalog_info_1} obj"
-msgstr ""
+msgstr "{catalog_info_1} obj"
 
 #. TRANSLATORS: number of objects in object list
 #: PiFinder/ui/object_list.py:434
 msgid ", {catalog_info_2}d old"
-msgstr ""
+msgstr ", {catalog_info_2}d preced."
 
 #: PiFinder/ui/object_list.py:444
 msgid "Sort: {sort_order}"
-msgstr ""
+msgstr "Type: {sort_order}"
 
 #: PiFinder/ui/preview.py:56
 msgid "Exposure"
-msgstr ""
+msgstr "Exposition"
 
 #: PiFinder/ui/preview.py:60
 msgid "Gamma"
-msgstr ""
+msgstr "Gamma"
 
 #: PiFinder/ui/preview.py:77
 msgid "BG Sub"
-msgstr ""
+msgstr "BG sub"
 
 #: PiFinder/ui/preview.py:81
 msgid "Full"
-msgstr ""
+msgstr "maximum"
 
 #: PiFinder/ui/preview.py:85
 msgid "Half"
-msgstr ""
+msgstr "à moitié"
 
 #: PiFinder/ui/preview.py:228
 msgid "Zoom x{zoom_number}"
-msgstr ""
+msgstr "Zoom x{zoom_number}"
 
 #: PiFinder/ui/software.py:88
 #, fuzzy
@@ -1064,7 +1064,7 @@ msgstr "Erreur de mise à jour"
 
 #: PiFinder/ui/software.py:101
 msgid "Wifi Mode: {wifi_mode}"
-msgstr ""
+msgstr "Mode Wifi: {wifi_mode}"
 
 #: PiFinder/ui/software.py:109
 msgid "Current Version"
@@ -1090,7 +1090,7 @@ msgstr "Vérification"
 
 #: PiFinder/ui/software.py:166
 msgid "updates{elipsis}"
-msgstr ""
+msgstr "MàJ{elipsis}"
 
 #: PiFinder/ui/software.py:182
 msgid "No Update"
@@ -1112,52 +1112,52 @@ msgstr "Telescope..."
 #: PiFinder/ui/text_menu.py:221
 #, fuzzy
 msgid "Select All"
-msgstr "RàZ tout"
+msgstr "Tout selectionner"
 
 #: PiFinder/ui/textentry.py:186
 #, fuzzy
 msgid "Results"
-msgstr "Récent"
+msgstr "Résultats"
 
 #: PiFinder/ui/textentry.py:292
 #, fuzzy
 msgid "Enter Location Name:"
-msgstr "Réglages"
+msgstr "Entrez nom localité"
 
 #: PiFinder/ui/textentry.py:300
 #, fuzzy
 msgid "Search:"
-msgstr "Rech. par Nom"
+msgstr "Recherche:"
 
 #: PiFinder/ui/timeentry.py:15
 #, fuzzy
 msgid "hh"
-msgstr "Haut"
+msgstr "hh"
 
 #: PiFinder/ui/timeentry.py:16
 msgid "mm"
-msgstr ""
+msgstr "mm"
 
 #: PiFinder/ui/timeentry.py:17
 msgid "ss"
-msgstr ""
+msgstr "ss"
 
 #: PiFinder/ui/timeentry.py:97
 #, fuzzy
 msgid "Enter Local Time"
-msgstr "Réglages"
+msgstr "Entrez temps local"
 
 #: PiFinder/ui/timeentry.py:117
 msgid "  Next box"
-msgstr ""
+msgstr "  Prochaine boite"
 
 #: PiFinder/ui/timeentry.py:124
 msgid "  Done"
-msgstr ""
+msgstr "  Fait"
 
 #: PiFinder/ui/timeentry.py:131
 msgid "󰍴  Delete/Previous"
-msgstr ""
+msgstr "󰍴  Effacer/précedent "
 
 #~ msgid "Language: Spanish"
 #~ msgstr "Langage: Espagnol"
@@ -1244,272 +1244,272 @@ msgstr ""
 #~ msgstr "Planète"
 
 #~ msgid "about"
-#~ msgstr ""
+#~ msgstr "à propos"
 
 #~ msgid "almost"
-#~ msgstr "Rapide"
+#~ msgstr "Presque"
 
 #~ msgid "among"
-#~ msgstr ""
+#~ msgstr "parmi"
 
 #~ msgid "annular or ring nebula"
-#~ msgstr ""
+#~ msgstr "Nébuleuse annulaire"
 
 #~ msgid "attached"
-#~ msgstr ""
+#~ msgstr "attaché"
 
 #~ msgid "brighter"
-#~ msgstr "Droit"
+#~ msgstr "Brillant"
 
 #~ msgid "between"
-#~ msgstr ""
+#~ msgstr "entre"
 
 #~ msgid "binuclear"
-#~ msgstr ""
+#~ msgstr "binoyau"
 
 #~ msgid "brightest to n side"
-#~ msgstr ""
+#~ msgstr "plus brillant sur coté nord"
 
 #~ msgid "brightest to s side"
-#~ msgstr ""
+#~ msgstr "plus brillant sur coté sud"
 
 #~ msgid "brightest to p side"
-#~ msgstr ""
+#~ msgstr "plus brillant sur coté est"
 
 #~ msgid "brightest to f side"
-#~ msgstr ""
+#~ msgstr "plus brillant sur coté ouest"
 
 #~ msgid "bright"
-#~ msgstr "Droit"
+#~ msgstr "Brillant"
 
 #~ msgid "considerably"
-#~ msgstr "Observation"
+#~ msgstr "considerablement"
 
 #~ msgid "chevelure"
-#~ msgstr "A l'envers"
+#~ msgstr "Chevelure"
 
 #~ msgid "coarse, coarsely"
-#~ msgstr ""
+#~ msgstr "grossier"
 
 #~ msgid "cometic (cometary form)"
-#~ msgstr ""
+#~ msgstr "en forme de cométes"
 
 #~ msgid "companion"
-#~ msgstr "Conditions"
+#~ msgstr "compagnon"
 
 #~ msgid "connected"
-#~ msgstr ""
+#~ msgstr "connecté"
 
 #~ msgid "in contact"
-#~ msgstr ""
+#~ msgstr "en contact"
 
 #~ msgid "compressed"
-#~ msgstr ""
+#~ msgstr "compressé"
 
 #~ msgid "cluster"
 #~ msgstr "Amas Ouvert"
 
 #~ msgid "diameter"
-#~ msgstr ""
+#~ msgstr "diamêtre"
 
 #~ msgid "defined"
-#~ msgstr ""
+#~ msgstr "défini"
 
 #~ msgid "diffused"
-#~ msgstr ""
+#~ msgstr "diffu"
 
 #~ msgid "difficult"
-#~ msgstr "Par défaut"
+#~ msgstr "dificile"
 
 #~ msgid "distance, or distant"
-#~ msgstr ""
+#~ msgstr "distance"
 
 #~ msgid "double"
-#~ msgstr "Etoile Double"
+#~ msgstr "Double"
 
 #~ msgid "extremely, excessively"
-#~ msgstr ""
+#~ msgstr "extremement"
 
 #~ msgid "most extremely"
-#~ msgstr ""
+#~ msgstr "trés extremememt"
 
 #~ msgid "easily resolvable"
-#~ msgstr ""
+#~ msgstr "facilement résolvable"
 
 #~ msgid "excentric"
-#~ msgstr "Récent"
+#~ msgstr "exentrique"
 
 #~ msgid "extended"
-#~ msgstr ""
+#~ msgstr "etendu"
 
 #~ msgid "following (eastward)"
-#~ msgstr ""
+#~ msgstr "suivant"
 
 #~ msgid "faint"
-#~ msgstr "Rapide"
+#~ msgstr "évanouir"
 
 #~ msgid "gradually"
-#~ msgstr ""
+#~ msgstr "graduellement"
 
 #~ msgid "globular"
 #~ msgstr "Amas Globulaire"
 
 #~ msgid "group"
-#~ msgstr ""
+#~ msgstr "groupe"
 
 #~ msgid "irregular"
-#~ msgstr ""
+#~ msgstr "irrégulier"
 
 #~ msgid "irregular figure"
-#~ msgstr ""
+#~ msgstr "forme irréguliére"
 
 #~ msgid "involved, involving"
-#~ msgstr ""
+#~ msgstr "impliqué"
 
 #~ msgid "little (adv.); long (adj.)"
-#~ msgstr ""
+#~ msgstr "petite; longue"
 
 #~ msgid "large"
-#~ msgstr "Langage"
+#~ msgstr "grande"
 
 #~ msgid "magnitude"
 #~ msgstr "Magnitude"
 
 #~ msgid "middle, or in the middle"
-#~ msgstr ""
+#~ msgstr "au centre"
 
 #~ msgid "north"
-#~ msgstr "Etoile"
+#~ msgstr "nord"
 
 #~ msgid "nebula"
 #~ msgstr "Nébuleuse"
 
 #~ msgid "nebulous"
-#~ msgstr "Nébuleuse"
+#~ msgstr "Nébuleux"
 
 #~ msgid "nebulosity"
-#~ msgstr "Nébuleuse"
+#~ msgstr "Nébuleusité"
 
 #~ msgid "north following"
-#~ msgstr ""
+#~ msgstr "suivant au nord"
 
 #~ msgid "north preceding"
-#~ msgstr ""
+#~ msgstr "précedent au nord"
 
 #~ msgid "north-south"
-#~ msgstr ""
+#~ msgstr "nors-sud"
 
 #~ msgid "near"
-#~ msgstr "Récent"
+#~ msgstr "prés"
 
 #~ msgid "nucleus, or to a nucleus"
-#~ msgstr ""
+#~ msgstr "noyau"
 
 #~ msgid "preceding-following"
-#~ msgstr ""
+#~ msgstr "précedent-suivant"
 
 #~ msgid "pretty (adv., before F. B. L, S)"
-#~ msgstr ""
+#~ msgstr "joli"
 
 #~ msgid "pretty gradually"
-#~ msgstr ""
+#~ msgstr "assez progéssivement"
 
 #~ msgid "pretty much"
-#~ msgstr ""
+#~ msgstr "à peu prés"
 
 #~ msgid "pretty suddenly"
-#~ msgstr ""
+#~ msgstr "assez soudain"
 
 #~ msgid "planetary nebula (same as PN)"
-#~ msgstr ""
+#~ msgstr "nébuleuse planétaire (comme NP)"
 
 #~ msgid "probably"
-#~ msgstr ""
+#~ msgstr "probablement"
 
 #~ msgid "poor (sparse) in stars"
-#~ msgstr ""
+#~ msgstr "pauvre en étoiles"
 
 #~ msgid "planetary nebula"
-#~ msgstr "Nébuleuse obscure"
+#~ msgstr "nébuleuse planétaire"
 
 #~ msgid "resolvable (mottled, not resolved)"
-#~ msgstr ""
+#~ msgstr "résolvable(tache, non résolu) "
 
 #~ msgid "partially resolved, some stars seen"
-#~ msgstr ""
+#~ msgstr "partiellement résolvable, quelques étoiles vues"
 
 #~ msgid "well resolved, clearly consisting of stars"
-#~ msgstr ""
+#~ msgstr "bien résolu, constitué clairement d'étoiles"
 
 #~ msgid "round"
-#~ msgstr ""
+#~ msgstr "rond"
 
 #~ msgid "exactly round"
-#~ msgstr ""
+#~ msgstr "exactement rond"
 
 #~ msgid "rich in stars"
-#~ msgstr "SAC Etoiles Rouges"
+#~ msgstr "riche en étoiles"
 
 #~ msgid "south"
-#~ msgstr "Etoile"
+#~ msgstr "sud"
 
 #~ msgid "south following"
-#~ msgstr ""
+#~ msgstr "suivant au sud"
 
 #~ msgid "south preceding"
-#~ msgstr ""
+#~ msgstr "précedent au sud"
 
 #~ msgid "scattered"
-#~ msgstr ""
+#~ msgstr "dispersé"
 
 #~ msgid "several"
-#~ msgstr ""
+#~ msgstr "plusieurs"
 
 #~ msgid "stars (pl.)"
 #~ msgstr "Etoiles"
 
 #~ msgid "stars of 9th magnitude and fainter"
-#~ msgstr ""
+#~ msgstr "étoiles de magnitude 9 et moins "
 
 #~ msgid "stars of mag. 9 to 13"
-#~ msgstr ""
+#~ msgstr "étoiles de magnitude entre 9 et 13"
 
 #~ msgid "stellar, pointlike"
-#~ msgstr ""
+#~ msgstr "stéllaire, ponctuel"
 
 #~ msgid "suspected"
-#~ msgstr ""
+#~ msgstr "suspecté"
 
 #~ msgid "small in angular size"
-#~ msgstr ""
+#~ msgstr "petit en résolution angulaire"
 
 #~ msgid "trapezium"
-#~ msgstr ""
+#~ msgstr "trapéze"
 
 #~ msgid "triangle, forms a triangle with"
-#~ msgstr ""
+#~ msgstr "triangle , forme de triangle"
 
 #~ msgid "trinuclear"
-#~ msgstr "Etoile Double"
+#~ msgstr "trois noyai"
 
 #~ msgid "very"
-#~ msgstr "Trés bon"
+#~ msgstr "beaucoup"
 
 #~ msgid "_very_"
-#~ msgstr ""
+#~ msgstr "_beaucoup_"
 
 #~ msgid "variable"
-#~ msgstr "TLK 90 Variables"
+#~ msgstr "variable"
 
 #~ msgid "remarkable"
-#~ msgstr ""
+#~ msgstr "remarquable"
 
 #~ msgid "very much so"
-#~ msgstr ""
+#~ msgstr "trés nombreux"
 
 #~ msgid "a magnificent or otherwise interesting object"
-#~ msgstr ""
+#~ msgstr "un objet magnifique ou trés interessant"
 
 #~ msgid "HELP"
-#~ msgstr ""
+#~ msgstr "AU SECOURS"
 
