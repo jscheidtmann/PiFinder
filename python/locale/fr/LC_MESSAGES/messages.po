@@ -19,7 +19,7 @@ msgstr ""
 
 #: PiFinder/cat_images.py:43
 msgid "No Image"
-msgstr ""
+msgstr "Pas d'image"
 
 #: PiFinder/obj_types.py:7 PiFinder/ui/menu_structure.py:362
 msgid "Galaxy"
